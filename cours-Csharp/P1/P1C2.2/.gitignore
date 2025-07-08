@@ -1,0 +1,10 @@
+# Build results
+bin/
+obj/
+*.sln
+
+# Visual Studio user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
