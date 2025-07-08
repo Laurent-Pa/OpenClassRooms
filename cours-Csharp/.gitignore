@@ -1,0 +1,11 @@
+# Build results pour tous les projets C#
+**/bin/
+**/obj/
+**/*.sln
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# Fichiers spécifiques à VS Code
+.vscode/
