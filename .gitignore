@@ -18,6 +18,13 @@ build/
 .vscode/tasks.json
 .vscode/extensions.json
 
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
 # Windows
 Thumbs.db
 ehthumbs.db
