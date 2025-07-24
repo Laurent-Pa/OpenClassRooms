@@ -12,7 +12,11 @@ if (args.Count() == 1)
 {
     Salutation.DireBonjour(args[0]);
 }
+else if (args.Length == 2)
+{
+    Salutation.DireBonjour(args[0] + "-" + args[1]);
+}
 else
 {
-    Salutation.DireBonjour("le monde");
+    Salutation.DireBonjour("world");
 }
