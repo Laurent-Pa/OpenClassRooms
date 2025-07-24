@@ -8,15 +8,33 @@ using BonjourConditionnel;
 /// </summary>
 /// <remarks>Créé par l'équipe éducative d'OpenClassrooms</remarks>
 
-if (args.Count() == 1)
+// Code with if,  else if, else condition
+//if (args.Count() == 1)
+//{
+//    Salutation.DireBonjour(args[0]);
+//}
+//else if (args.Length == 2)
+//{
+//    Salutation.DireBonjour(args[0] + "-" + args[1]);
+//}
+//else
+//{
+//    Salutation.DireBonjour("world");
+//}
+
+// Code with switch condition
+switch (args.Length)
 {
-    Salutation.DireBonjour(args[0]);
-}
-else if (args.Length == 2)
-{
-    Salutation.DireBonjour(args[0] + "-" + args[1]);
-}
-else
-{
-    Salutation.DireBonjour("world");
+    case 0: // Aucun argument n'a été envoyé
+        Salutation.DireBonjour("World");
+        break;
+    case 1: // L'utilisateur a fourni un argument dans le terminal
+        Salutation.DireBonjour(args[0]);
+        break;
+    case 2: // L'utilisateur a fourni 2 arguments
+        Salutation.DireBonjour(args[0] + "-" + args[1]);
+        break;
+    default: // L'utilisateur a fourni plus d'arguments que nous ne pouvons en gérer·!
+        Console.WriteLine("Désolé, je ne sais pas comment gérer plus de deux prénoms·!");
+        break;
 }
