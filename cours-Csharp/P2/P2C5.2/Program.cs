@@ -4,10 +4,21 @@ using System.Net.Http;
 
 
 string chaineUrl = DonneeUtilisateur.DemanderUneUrl();
-string resultat = await RecupererContenu(chaineUrl);
-Console.WriteLine(resultat);
 
+// on n'affiche plus le contenu en console
+//string resultat = await RecupererContenu(chaineUrl);
+// Console.WriteLine(resultat); 
 
+var contenu = await RecupererContenu(chaineUrl);
+
+try
+{
+    EcrireFichier.Ecrire(contenu, "output.txt");
+}
+catch (IOException e)
+{
+    Console.WriteLine("Impossible d'écrire dans le fichier - " + e.ToString());
+}
 
 /// <summary>
 /// Retourner le contenu de l'URL
