@@ -32,7 +32,7 @@ catch (FormatException e)
 catch (DivideByZeroException e)
 {
     Console.WriteLine("Vous devez fournir au moins une température");
-    throw;
+    Environment.Exit(-1);
 }
 
 finally
