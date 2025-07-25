@@ -15,3 +15,11 @@ while (y<5)
     Console.WriteLine("Je m'amuse comme un fou avec les boucles while");
     y += 1;
 }
+
+// Itération d'une liste
+string[] listUsers = new string[] { "Laurent", "Karine", "Kaponk", "Edna" };
+
+foreach (var user in listUsers)
+{
+    Console.WriteLine("Bonjour " + user);
+}
