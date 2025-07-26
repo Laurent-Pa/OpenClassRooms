@@ -2,15 +2,17 @@
 using P2C5._2;
 using System.Net.Http;
 
-
+// Action attendue de l'utilisateur : indiquer l'URL
 string chaineUrl = DonneeUtilisateur.DemanderUneUrl();
 
 // on n'affiche plus le contenu en console
 //string resultat = await RecupererContenu(chaineUrl);
 // Console.WriteLine(resultat); 
 
+// Appel pour récupérer le contenu (la définition de Recuperer est codée plus bas
 var contenu = await RecupererContenu(chaineUrl);
 
+// Appel pour écrire dans le fichier
 try
 {
     EcrireFichier.Ecrire(contenu, "output.txt");
