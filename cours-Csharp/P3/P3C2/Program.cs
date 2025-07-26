@@ -10,6 +10,7 @@ namespace P3C2
         {
             Animal poisson_rouge = new Animal();
             Animal.AfficherNom();
+            Animal.AfficherTotal();
         }
     }
 }
