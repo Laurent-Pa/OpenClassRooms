@@ -29,15 +29,18 @@ namespace P3C4bis.Models
             Color = color;
             Race = race;
             isHungry = true;
-            isHappy = true;
+            isHappy = false;
         }
 
         public void Feed()
         {
             if (isHungry)
             {
-                isHungry = false;
+                isHungry = true;
                 Console.WriteLine($"{this.Name} a été nourri avec succès.");
+            }
+            else { 
+                Console.WriteLine($"{this.Name} avait suffisament mangé, ça fait beaucoup");
             }
         }
 
@@ -46,11 +49,11 @@ namespace P3C4bis.Models
             if (!isHappy)
             {
                 isHappy = true;
-                Console.WriteLine($"{this.Name} est content après avoir été caressé.");
+                Console.WriteLine($"{this.Name} ronronne.");
             }
             else
             {
-                Console.WriteLine($"{this.Name} est encore plus content maintenant.");
+                Console.WriteLine($"{this.Name} ronronne encore plus.");
             }
         }
     }

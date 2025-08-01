@@ -10,6 +10,18 @@ Console.WriteLine($"{kaponk.Name} appartient à {kaponk.Owner}");
 Console.WriteLine($"{edna.Name} appartient à {edna.Owner}");
 
 // TODO : afficher le resultat de ces deux méthodes ici
+if ( kaponk.isHungry )
+{
+    Console.WriteLine($"{kaponk.Name} a faim, il faut le nourrir!");
+    kaponk.Feed();
+}
+
+if ( !edna.isHappy )
+{
+    Console.WriteLine($"{edna.Name} est un peu ronchon, il faut la caresser!");
+    edna.Pet();
+}
+
 
 
 // TODO : exécuter les méthodes de test pour les deux méthodes de la classe Program.cs
