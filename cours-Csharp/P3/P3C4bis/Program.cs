@@ -28,5 +28,5 @@ if ( !edna.isHappy )
 // TODO : exécuter les méthodes de test pour les deux méthodes de la classe Program.cs
 
 Test test = new Test();
-test.TestFeedEdna(kaponk);
-test.TestFeedEdna(edna);
+test.TestFeedAnimal(kaponk);
+test.TestPetAnimal(edna);
