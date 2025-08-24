@@ -1,6 +1,7 @@
-﻿using System.ComponentModel;
-
+﻿using P3C4bis;
 using P3C4bis.Models;
+using System.ComponentModel;
+
 
 // TODO : créer deux instances d'Animal 
 Animal kaponk = new Animal("Kaponk", "Karine", "Blanc & roux", "chat");
@@ -25,3 +26,7 @@ if ( !edna.isHappy )
 
 
 // TODO : exécuter les méthodes de test pour les deux méthodes de la classe Program.cs
+
+Test test = new Test();
+test.TestFeedEdna(kaponk);
+test.TestFeedEdna(edna);

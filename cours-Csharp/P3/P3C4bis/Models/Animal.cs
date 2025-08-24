@@ -36,7 +36,7 @@ namespace P3C4bis.Models
         {
             if (isHungry)
             {
-                isHungry = true;
+                isHungry = false;
                 Console.WriteLine($"{this.Name} a été nourri avec succès.");
             }
             else { 
